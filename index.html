@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2f2e2e;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #ffff;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            border-radius: 15px;
+            width: 250px;
+
+        }
+
+        .email,
+        .password {
+            border: 1px black solid;
+            border-radius: 4px;
+            margin: 5px;
+            margin-top: 10px;
+            padding: 15px;
+            font-size: large;
+            width: fit-content;
+            color: #b4aeae;
+            background-color: #5A5A5A;
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 5px;
+            display: inline;
+            color: #a8a2a2;
+            font-size: medium;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 15px;
+            font-size: medium;
+            border-radius: 25px;
+            background-color: #FF5C5C;
+            color: #ffff;
+            margin-top: 10px;
+            width: 250px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .email::placeholder {
+            color: #b1a8a8;
+            font-weight: bold;
+        }
+
+        .password::placeholder {
+            color: #b1a8a8;
+            font-weight: bold;
+        }
+
+        #card {
+            background-color: #484848;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="card">
+        <div class="heading">
+            <h1>Login Page</h1>
+        </div>
+        <form>
+            <input type="email" placeholder="email" class="email">
+            <input type="password" placeholder="password" class="password">
+            <button type="submit" class="submit">Login</button>
+            <a href="#" class="forgot">Forgot password?</a>
+        </form>
+    </div>
+</body>
+
+</html>
